@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { toast } from "react-toastify"
 
-const API_URL_ADD_FOOD =  "http://localhost:8080/api/addFood";
-const API_URL_LIST_FOOD = "http://localhost:8080/api/getAllFood";
-const API_URL_DELETE_FOOD = "http://localhost:8080/api/deleteFoodById/";
+const API_URL_ADD_FOOD =  "http://3.106.127.69:8080/api/addFood";
+const API_URL_LIST_FOOD = "http://3.106.127.69:8080/api/getAllFood";
+const API_URL_DELETE_FOOD = "http://3.106.127.69:8080/api/deleteFoodById/";
 
 
 export const addFoodService = async (foodData,image)=>{
