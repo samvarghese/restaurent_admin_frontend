@@ -3,10 +3,11 @@ import { toast } from "react-toastify"
 
 
 const Domain = "http://localhost:8080";
+const Server = "http://3.106.127.69:8080"
 
-const API_URL_ADD_FOOD =  Domain+"/api/addFood";
-const API_URL_LIST_FOOD = Domain+"/api/getAllFood";
-const API_URL_DELETE_FOOD = Domain+"/api/deleteFoodById/";
+const API_URL_ADD_FOOD =  Server+"/api/addFood";
+const API_URL_LIST_FOOD = Server+"/api/getAllFood";
+const API_URL_DELETE_FOOD = Server+"/api/deleteFoodById/";
 
 
 export const addFoodService = async (foodData,image)=>{
