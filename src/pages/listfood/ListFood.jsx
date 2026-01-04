@@ -7,16 +7,14 @@ import './ListFood.css';
 
 
 const ListFood = () => {
+const [data,setData] = useState([])
+const [previewImg, setPreviewImg] = useState(null);
 
-  const [data,setData] = useState([])
-
-  const [previewImg, setPreviewImg] = useState(null);
-
-  const openModal = (url) => setPreviewImg(url);
-  const closeModal = () => setPreviewImg(null);
+const openModal = (url) => setPreviewImg(url);
+const closeModal = () => setPreviewImg(null);
 
     // Common function to fetch food data
-    const fetchData = async () => {
+const fetchData = async () => {
       try {
         const response = await listFoodService();
         if (response.status === 200) {
@@ -26,7 +24,7 @@ const ListFood = () => {
       } catch (error) {
         console.error("Error fetching food:", error);
       }
-    };
+ };
   
  
   useEffect(() => {
