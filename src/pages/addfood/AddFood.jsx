@@ -72,9 +72,12 @@ const AddFood = () => {
                   <label htmlFor="foodcategory" className="form-label">Category</label>
                     <select className="form-select" id="category"  name="category"  onChange={onChangehandler} value={data.category}>
                         <option value="">Please Select the value</option>
-                        <option value="Briyani">Briyani</option>
-                        <option value="Meals">Meals</option>
-                        <option value="Chappatti">Chappatii</option>
+                        <option value="Biryani">Biryani</option>
+                        <option value="Juices">Juices</option>
+                        <option value="Ice Cream">Ice Cream</option>
+                        <option value="Burgers">Burgers</option>
+                        <option value="Salads">Salads</option>
+                        <option value="Rolls">Rolls</option>
                     </select>
              
                 </div>
@@ -92,8 +95,8 @@ const AddFood = () => {
                         className="btn btn-primary btn-lg"
                          disabled={loading}
                 >
-                     {loading ? (
-                     <>
+                    {loading ? (
+                        <>
                         <span className="spinner-border spinner-border-sm me-2" />
                         Saving...
                         </>
